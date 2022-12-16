@@ -1,4 +1,5 @@
 import sys
+import numpy as np
 
 mat = []
 
@@ -15,5 +16,6 @@ with open('data.txt', 'r', encoding='utf-8') as fin:
             row.append(num)
         mat.append(row)
 
-print(mat)
+m = np.matrix(mat)
+print(m)
 
